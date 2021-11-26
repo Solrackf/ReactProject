@@ -1,0 +1,22 @@
+.container{
+    background: #000A14;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+#WaveOne{
+    position: absolute;
+    height: 103vh;
+    right: -5.5rem;
+    top: -2rem;
+}
+#WaveTwo{
+    position: absolute;
+    bottom: -50%;
+    left: -10%;
+}
+#WaveThree{
+    filter: drop-shadow(0px -7px 68px rgba(5, 117, 230, 0.44), 0px -3.46963px 46.5805px rgba(5, 117, 230, 0.22));
+    -webkit-filter: drop-shadow(0px -7px 68px rgba(5, 117, 230, 0.44), 0px -3.46963px 46.5805px rgba(5, 117, 230, 0.22));
+}
