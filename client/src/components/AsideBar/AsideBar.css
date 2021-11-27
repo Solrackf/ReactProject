@@ -1,0 +1,40 @@
+.aside-container{ 
+    position: relative;
+    width: 15vw;
+    height: 80vh;
+    background-color: #020938;
+    opacity: .7;
+    margin-top: 4rem;
+    margin-left: 5rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.subtitle-container{
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.subtitle{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+}
+.subtitle-name{ 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+.search-button{
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(113,242,249, 0.5);
+    color: white;
+    border: none;
+    height: 7%;
+    width: 70%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: .5rem;
+}

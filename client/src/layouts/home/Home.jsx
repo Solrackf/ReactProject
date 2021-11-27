@@ -1,6 +1,7 @@
 import './home.css'
 import WaveOne from '../../WaveOne.svg'
 import WaveTwo from '../../WavesTwo.svg'    
+import AsideBar from '../../components/AsideBar/AsideBar'
 
 export default function Home(props){
     return (
