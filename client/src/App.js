@@ -1,9 +1,9 @@
-import Home from './layouts/home/Home';
+import PaymentLink from './components/PaymentLink/PaymentLink';
 
 
 function App(props) {
   return (
-    <Home/>
+    <PaymentLink/>
   );
 }
 export default App;
