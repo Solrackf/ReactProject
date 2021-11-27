@@ -1,6 +1,4 @@
 import './PaymentPanel.css'
-// import WaveOne from '../../WaveOne.svg'
-// import WaveTwo from '../../WavesTwo.svg'    
 
 export default function PaymentPanel(props){
     return (
