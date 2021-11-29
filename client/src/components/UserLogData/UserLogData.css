@@ -3,13 +3,13 @@
 .states-container{ 
     position: relative;
     width: 70vw;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.9);
     display: inline-grid; 
     border-radius: 1rem;
     grid-template-columns: 2fr 2fr;
-    border:1px solid black;
     align-items: center;
     justify-items: center;
+    box-shadow: 0px 0px 10px 1px rgba(177, 177, 177, 0.3);
     
 }
 .state{ 
