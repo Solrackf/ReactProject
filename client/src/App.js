@@ -1,12 +1,12 @@
 import Home from './layouts/home/Home';
-import AsideBar from './components/AsideBar/AsideBar';
+import States from './layouts/states/States';
 
 
 function App(props) {
   return (
-    <div>
-      {/* <Home/> */}
-      <AsideBar/>
+    <div>{/* 
+      <Home/> */}
+      <States />
     </div>
   );
 }
