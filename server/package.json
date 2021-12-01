@@ -5,12 +5,11 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"nodemon index.js"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "bcrypt-nodejs": "^0.0.3",
     "body-parser": "^1.19.0",
@@ -28,5 +27,6 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  }
+  },
+  "description": ""
 }

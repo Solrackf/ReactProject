@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60vh;
+    width: 30vw;
+    background: rgba(255, 255, 255, 0.8);
+    border: 0.0625rem solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 2.375rem 3.5rem rgba(113, 242, 249, 0.21), 0px 1rem 2.4375rem rgba(113, 242, 249, 0.105);
+    backdrop-filter: blur(1rem);
+    border-radius: 2rem;
+}
+
+.login{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration-line: underline;
+    color: #0575E6;
+    margin-top: 0.5rem;
+    margin-bottom: 10vh;
+}
+
+.reference{
+    margin-top: 8.4vh;
+    padding: 0.75rem;
+    width: 20vw;
+    background: rgba(247, 253, 254, 0.8);
+    text-align: center;
+    border-radius: 21.875rem;
+    border: 0;
+    outline: none;
+    text-decoration-line: underline;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #0575E6;
+}
+
+.reference::placeholder{
+    text-decoration-line: underline;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #0575E6;
+}
+
+.search{
+    background: linear-gradient(95.52deg, #71F2F9 0.05%, #0575E6 100%);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #F7FDFE;
+    margin-top: 3.6vh;
+}
+
+.text {
+    display: flex;
+    width: 6.1875rem;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1rem;
+    color: #043A71;
+    margin-top: 8.4vh;
+    line-height: 100%;
+}
+
+.title {
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: #043A71;
+    margin-top: 10vh;
+}
