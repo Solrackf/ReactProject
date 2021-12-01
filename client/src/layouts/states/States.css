@@ -1,0 +1,15 @@
+#WaveTwo{
+    top: -55vh;
+    width: 80%;
+}
+#WaveThree{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+.principal-state-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
