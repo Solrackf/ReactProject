@@ -1,16 +1,10 @@
-import Home from './layouts/home/Home';
-
-import PaymentPanel from './components/PaymentPanel/PaymentPanel';
-import States from './layouts/states/States';
-import PaymentLink from './components/PaymentLink/PaymentLink';
+import PriceSetting from './components/PriceSetting/PriceSetting';
+// import MeasureSetting from './components/MeasureSetting/MeasureSetting';
 
 function App(props) {
   return (
-    <div>{
-      <Home/>
-      <PaymentLink/>
-      <PaymentPanel/>
-      <States />
+    <div>
+      <PriceSetting/>
     </div>
   );
 }
