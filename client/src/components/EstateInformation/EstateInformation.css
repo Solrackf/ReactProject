@@ -1,0 +1,19 @@
+:root{
+    --main-background:#F1FBFE
+}
+
+#EstateInformation{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-evenly;
+    width: 40vw;
+    height: 40vh;
+    background: var(--main-background);
+    border-radius: 1rem;
+    -webkit-border-radius:1rem;
+    -moz-border-radius:1rem;
+    -ms-border-radius:1rem;
+    -o-border-radius:1rem;
+}

@@ -1,3 +1,4 @@
+import AccountAgreement from './components/AccountAgreement/AccountAgreement';
 import Home from './layouts/home/Home';
 
 import PaymentPanel from './components/PaymentPanel/PaymentPanel';
@@ -11,6 +12,7 @@ function App(props) {
       <PaymentLink/>
       <PaymentPanel/>
       <States />
+      <AccountAgreement/>
     </div>
   );
 }
