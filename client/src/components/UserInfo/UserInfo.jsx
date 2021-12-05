@@ -9,7 +9,7 @@ function userInfo() {/*
             <div className="user-container">
                 <div className="user-info">
                     <div>
-                        <img src={profilePicture} width= "100px"/>
+                        <img src={profilePicture} width= "130px"/>
                         <ul>
                             <li><h3>Rober Galarga</h3></li>
                             <li>Cédula: 123451145</li>

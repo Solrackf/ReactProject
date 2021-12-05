@@ -30,11 +30,13 @@
 }
 .user-info ul li{
     list-style: none;
-    margin-left: 1rem;
+    margin-left: 1rem;    
+    font-family: 'poppins', sans-serif;
 }
 .embed{
     width: 90%;
     height: 90%;
+    border-radius: 1rem;
 }
 .btn-delete{
     width: 8rem;
