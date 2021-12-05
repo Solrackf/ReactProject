@@ -22,7 +22,7 @@ const InvCreation = () => {
                         <label for="fechaOportuna">Fecha oportuna de pago</label>
                         <input id="fechaOportuna" type="text" />
 
-                        <label for="observaciones">Oservaciones</label>
+                        <label for="observaciones">Observaciones</label>
                         <input id="observaciones" type="text" />
 
                         <input type="submit" id="btnEnviar" value="CREAR" />
