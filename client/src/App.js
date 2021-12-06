@@ -3,13 +3,15 @@ import Home from './layouts/home/Home';
 
 import PaymentPanel from './components/PaymentPanel/PaymentPanel';
 import States from './layouts/states/States';
-import PaymentLink from './components/PaymentLink/PaymentLink';
+import InternalUserDashboard from './layouts/InternalUserDashboard/InternalUserDashboard';
+import InvoiceCreation from './layouts/InvoiceCreation/InvoiceCreation';
 
 function App(props) {
   return (
     <div>{
       <Home/>
       <PaymentLink/>
+      <InvoiceCreation />
       <PaymentPanel/>
       <States />
       <AccountAgreement/>

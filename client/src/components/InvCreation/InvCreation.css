@@ -1,0 +1,49 @@
+.principal{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inv-container{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 80vw;
+    height: 90vh;
+    padding: 4rem;
+    border-radius: 2rem;    
+    box-shadow: 0px 0px 10px 1px rgba(177, 177, 177, 0.3);
+}
+.inv-container h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    margin-bottom: 2rem;
+    color:#000A46
+;}
+.inv-container form{    
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 2fr;    
+    font-size: 1.5em;
+}
+.inv-container form input{
+    width: 100%;
+    border-radius: 1rem;
+    font-size: 1em;
+    height: 2rem;
+    padding-left: 15px;
+    border: none;
+    background-color: #0576e6b0;
+}
+#btnEnviar{
+    font-family: 'Poppins', sans-serif;
+    width: 70%;
+    border: none;
+    height: 2.5rem;
+    border-radius: 1rem;
+    padding-left: 0;
+    color: white;
+    background: linear-gradient(to right, #000A46, #0575E6);
+    cursor: pointer;
+}
