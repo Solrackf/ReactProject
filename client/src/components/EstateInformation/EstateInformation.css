@@ -1,9 +1,6 @@
 :root{
     --main-background:#F1F8FE;
 }
-
-*{
-}
 #EstateInformation{
     display: flex;
     flex-direction: column;

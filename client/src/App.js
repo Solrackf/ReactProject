@@ -1,12 +1,18 @@
+import AccountAgreement from './components/AccountAgreement/AccountAgreement';
 import Home from './layouts/home/Home';
 import EstateInformation from './components/EstateInformation/EstateInformation';
-import WaveOne from './components/WaveOne/WaveOne'
-
+import PaymentPanel from './components/PaymentPanel/PaymentPanel';
+import States from './layouts/states/States';
+import PaymentLink from './components/PaymentLink/PaymentLink';
 
 function App(props) {
   return (
     <div>
-      <WaveOne/>
+      <Home/>
+      <PaymentLink/>
+      <PaymentPanel/>
+      <States />
+      <AccountAgreement/>
     </div>
   );
 }

@@ -1,0 +1,18 @@
+:root{
+    --main-background:#F1FBFE
+}
+
+#AccountAgreement{
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    margin-top: 2rem;
+    width: 50vw;
+    height: 70vh;
+    background: var(--main-background);
+    border-radius: 1rem;
+    -webkit-border-radius:1rem;
+    -moz-border-radius:1rem;
+    -ms-border-radius:1rem;
+    -o-border-radius:1rem;
+}

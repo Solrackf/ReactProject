@@ -1,5 +1,4 @@
 import './EstateInformation.css'
-
 export default function EstateInformation(){
     return(
         <div id="EstateInformation">
