@@ -1,9 +1,22 @@
+:root{
+    --Principal-letter: #010F57;
+    --Second-letter:#020938;
+    --White-Background: #F1F8FE;
+    --light-gradient: linear-gradient(275.52deg, #71F2F9 0%, #0575E6 100%);
+    --dark-gradient:linear-gradient(90.24deg, #000A46 0.38%, #0575E6 97.96%);
+}
+h1,p,h2,h3,h4,h5,h6,a,li,text{
+    color: var(--Principal-letter);
+}
+a{
+    text-decoration: none;
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 body{
-    background: #000A14;
-    color: aliceblue;
+    /* background: #000A14; */
+    /* color: aliceblue; */
 }

@@ -1,22 +1,27 @@
-.container{
-    background: #000A14;
-    height: 100vh;
-    width: 100vw;
+.Home{
+    width: calc(100vw-1rem);
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(10,1fr);
     overflow: hidden;
-    position: relative;
 }
-#WaveOne{
-    position: absolute;
-    height: 103vh;
-    right: -5.5rem;
-    top: -2rem;
+#principalTitles{
+    background: #eee;
+    grid-row: 4/8;
+    grid-column: 6/16;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
-#WaveTwo{
-    position: absolute;
-    bottom: -50%;
-    left: -10%;
+#principalTitles h1{
+    font-size: 6rem;
+    text-align: center;
+    line-height: 50%;
 }
-#WaveThree{
-    filter: drop-shadow(0px -7px 68px rgba(5, 117, 230, 0.44), 0px -3.46963px 46.5805px rgba(5, 117, 230, 0.22));
-    -webkit-filter: drop-shadow(0px -7px 68px rgba(5, 117, 230, 0.44), 0px -3.46963px 46.5805px rgba(5, 117, 230, 0.22));
+.LittleTitle{
+    font-size: 3rem;
+    text-align: center;
 }
