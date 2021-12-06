@@ -1,7 +1,7 @@
 .aside-container{ 
     position: relative;
     width: 15vw;
-    height: 80vh;
+    height: 100%;
     background-color: #020938;
     opacity: .7;
     border-radius: 2rem;
@@ -35,4 +35,5 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: .5rem;
+    cursor: pointer;
 }
