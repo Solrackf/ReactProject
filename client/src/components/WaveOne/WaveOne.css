@@ -1,0 +1,17 @@
+#WaveOne{
+    width: 100%;
+    max-height: 100vh;
+    height: 100vh;
+    position: relative;
+}
+#WO{
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#WO2{
+    height: 100%;
+    position: absolute;
+    top: 0%;
+}
