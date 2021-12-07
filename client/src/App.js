@@ -1,21 +1,9 @@
-import AccountAgreement from './components/AccountAgreement/AccountAgreement';
-import Home from './layouts/home/Home';
-import PriceSetting from './components/PriceSetting/PriceSetting';
-import PaymentPanel from './components/PaymentPanel/PaymentPanel';
-import States from './layouts/states/States';
-import InternalUserDashboard from './layouts/InternalUserDashboard/InternalUserDashboard';
-import InvoiceCreation from './layouts/InvoiceCreation/InvoiceCreation';
+import EditUsersManagement from './components/EditUsersManagement/EditUsersManagement';
 
 function App(props) {
   return (
-    <div>{
-      <Home/>
-      <PriceSetting/>
-      <PaymentLink/>
-      <InvoiceCreation />
-      <PaymentPanel/>
-      <States />
-      <AccountAgreement/>
+    <div>
+      <EditUsersManagement/>
     </div>
   );
 }
