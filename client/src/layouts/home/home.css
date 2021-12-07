@@ -7,7 +7,6 @@
     overflow: hidden;
 }
 #principalTitles{
-    background: #eee;
     grid-row: 4/8;
     grid-column: 6/16;
     display: flex;
@@ -24,4 +23,117 @@
 .LittleTitle{
     font-size: 3rem;
     text-align: center;
+}
+.TitlesButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.ButtonGradient{
+    background: var(--light-gradient);
+    padding: 0.5rem 1rem;
+    border-radius: 2.5rem;
+    -webkit-border-radius: 2.5rem;
+    -moz-border-radius: 2.5rem;
+    -ms-border-radius: 2.5rem;
+    -o-border-radius: 2.5rem;
+}
+.ButtonGradientTwo{
+    background: var(--dark-gradient);
+    padding: 0.5rem 1rem;
+    border-radius: 2.5rem;
+    -webkit-border-radius: 2.5rem;
+    -moz-border-radius: 2.5rem;
+    -ms-border-radius: 2.5rem;
+    -o-border-radius: 2.5rem;
+}
+nav{
+    grid-column: 2/20;
+    grid-row: 1/2;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(0.4rem);
+}
+#Logo, #Logo a{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+#Logo img{
+    height: 2.75rem;
+}
+#TypingLogo{
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+}
+#RedirectOptions{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+#RedirectOptions a{
+    color: var(--White-Background);
+    padding: 0.5rem 1rem;
+}
+/* 
+    ##Device = Desktops
+    ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1367px) {
+}
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+    
+}
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+*/
+@media (max-width: 480px) {
+    .Home{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    nav{
+        width: 100vw;
+        position: fixed;
+        top: 0.25rem;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(90.24deg, rgba(0, 11, 70, 0.7) 0.38%, rgba(5, 118, 230, 0.5) 97.96%);
+        padding: 1rem;
+    }
+    #Logo p{
+        color: var(--White-Background);
+    }
+    #RedirectOptions{
+        display: none;
+    }
+    #principalTitles{
+        top: 50%;
+        transform: translate(0,-100%);
+        -webkit-transform: translate(0,-100%);
+        -moz-transform: translate(0,-100%);
+        -ms-transform: translate(0,-100%);
+        -o-transform: translate(0,-100%);
+}
+    
+    #principalTitles h1{
+        line-height: 70%;
+    }
 }
