@@ -22,7 +22,7 @@ const internalUser = () => {
             </div>
             
         </Fragment>
-     );
+    );
 }
  
 export default internalUser;

@@ -1,6 +1,6 @@
 import './PredioRegister.css'
 
-export default function PaymentLink(props){
+export default function PredioRegister(props){
     return (
         <div className="container">
             <span className="title">Registro de Predio</span>
