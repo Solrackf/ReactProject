@@ -1,17 +1,29 @@
-import './EditUsersManagement.css';
+import './EditUsersManagement.css'
 
 export default function EditUsersManagement(props){
     return (
-        <div className="edit-users-management">
-            <span>Edición de usuario</span>
-            <form action="" className="form-edit-users-management">
-                <div className="items-edit-users-management">
-                    <div className="item-edit-users-management"><label>Nombre completo</label><input type="text" value="John Doe"/></div>
-                    <div className="item-edit-users-management"><label>Número de identificación</label><input type="text" value="1234567890" readOnly/></div>
-                    <div className="item-edit-users-management"><label>Teléfono</label><input type="text" value="3214567890"/></div>
-                    <div className="item-edit-users-management"><label>Correo electrónico</label><input type="email" value="johndoe@gmail.com"/></div>
+        <div className="container-edit-users-management">
+            <span className="title-edit-users-management">Edición de usuario</span>
+            <form action="" method="post" className="container-form-edit-users-management">
+                <div className="form-edit-users-management">
+                    <div>
+                        <label className="label-edit-users-management">Nombre completo</label>
+                        <input className="input-edit-users-management" type="text" value="John Doe"/>
+                    </div>
+                    <div>
+                        <label className="label-edit-users-management">Número de identificación</label>
+                        <input className="input-edit-users-management" type="text" value="1234567890"/>
+                    </div>
+                    <div>
+                        <label className="label-edit-users-management">Teléfono</label>
+                        <input className="input-edit-users-management" type="text" value="3214567890"/>
+                    </div>
+                    <div>
+                        <label className="label-edit-users-management">Correo electrónico</label>
+                        <input className="input-edit-users-management" type="text" value="johndoe@gmail.com"/>
+                    </div>
                 </div>
-                <input type="submit" value="Guardar cambios" className="save-edit-users-management"/>
+                <input type="submit" value="Guardar cambios" className="btn-edit-users-management"/>
             </form>
         </div>
     )
