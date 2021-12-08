@@ -1,9 +1,9 @@
-import EditUsersManagement from './components/EditUsersManagement/EditUsersManagement';
+import SettingsSubsidios from './components/SettingsSubsidios/SettingsSubsidios';
 
 function App(props) {
   return (
     <div>
-      <EditUsersManagement/>
+      <SettingsSubsidios/>
     </div>
   );
 }
