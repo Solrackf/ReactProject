@@ -17,9 +17,9 @@ export default function Home(props){
                     </Link>
                 </section>
                 <section id="RedirectOptions">
-                    <Link to="/">Registrarse
+                    <Link to="/SignUp">Registrarse
                     </Link>
-                    <Link to="/">Ingresar
+                    <Link to="/" className="ButtonGradientTwo">Ingresar
                     </Link>
                 </section>
             </nav>
