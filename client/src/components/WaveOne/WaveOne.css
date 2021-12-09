@@ -1,0 +1,50 @@
+#WaveOne{
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    grid-column: 5/-1;
+    grid-row: 1/-1;
+}
+#w-o{
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#w-o2{
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    filter: drop-shadow(0rem 2.375rem 4rem #4286f41c) drop-shadow(0rem 3.781875rem 2rem #4286f409);
+    -webkit-filter: drop-shadow(0rem 2.375rem 4rem #4286f41c) drop-shadow(0rem 3.781875rem 2rem #4286f409);
+}
+/* 
+    ##Device = Desktops
+    ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1367px) {
+}
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+    
+}
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+*/
+@media (max-width: 480px) {
+    
+}

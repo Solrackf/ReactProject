@@ -3,9 +3,9 @@ import AutRevReq from '../AutRevReq/AutRevReq'
 import YesRevReq from '../YesRevReq/YesRevReq'
 import NoRevReq from '../NoRevReq/NoRevReq'
 
-export default function MeasureSetting(props){
+export default function InfoRevReq(props){
     return (
-        <div className="container">
+        <div className="container-infoRev">
             <div className="container-info">
                 <p><span className="subtitle">Número de Solicitud: </span><span className="text">0000000001</span></p>
                 <p><span className="subtitle">Propietario: </span><span className="text">Julanito de Tal</span></p>

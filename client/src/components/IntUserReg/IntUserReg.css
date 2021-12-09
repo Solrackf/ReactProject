@@ -1,0 +1,110 @@
+.btn-int-user-reg {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: var(--White-Background);
+    background: linear-gradient(148.12deg, #000A46 -0.24%, #0575E6 99.99%);
+    border-radius:2rem;
+    outline: none;
+    border: none;
+    -webkit-border-radius:2rem;
+    -moz-border-radius:2rem;
+    -ms-border-radius:2rem;
+    -o-border-radius:2rem;
+    transition: background 0.95s 0 ease-in;
+    -webkit-transition: background 0.95s 0 ease-in;
+    -moz-transition: background 0.95s 0 ease-in;
+    -ms-transition: background 0.95s 0 ease-in;
+    -o-transition: background 0.95s 0 ease-in;
+}
+
+.btn-int-user-reg:hover {
+    transition: background 0.95s 0 ease-in;
+    -webkit-transition: background 0.95s 0 ease-in;
+    -moz-transition: background 0.95s 0 ease-in;
+    -ms-transition: background 0.95s 0 ease-in;
+    -o-transition: background 0.95s 0 ease-in;
+    background: linear-gradient(148.12deg, #0575E6 -0.24%, #000A46 99.99%);
+}
+
+.container-int-user-reg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:1.5rem 1.5rem;
+    background: rgba(255, 255, 255,0.8);
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    backdrop-filter: blur(0.5rem);
+}
+
+.container-form-int-user-reg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.form-int-user-reg {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    color: #020938;
+    text-align: center;
+}
+
+.form-int-user-reg div{
+    width: 45%;
+}
+
+.input-int-user-reg {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #0575E6;
+    text-align: center;
+    margin-bottom: 0.4rem;
+    background-color: rgba(113, 242, 249, 0.2);
+}
+
+.input-int-user-reg::placeholder {
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(5, 118, 230, 0.5);
+    text-align: center;
+}
+
+.label-int-user-reg {
+    color: #020938;
+    font-weight: 600;
+}
+
+.title-int-user-reg {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: #020938;
+}
+
+.subtitle-int-user-reg {
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    color: #0575E6;
+}

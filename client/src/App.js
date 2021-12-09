@@ -1,9 +1,9 @@
-import EditUsersManagement from './components/EditUsersManagement/EditUsersManagement';
-
+import Home from './layouts/home/Home';
+import './index.css'
 function App(props) {
   return (
     <div>
-      <EditUsersManagement/>
+      <Home/>
     </div>
   );
 }

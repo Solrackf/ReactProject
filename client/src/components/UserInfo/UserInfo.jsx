@@ -1,17 +1,16 @@
 import React, {Fragment} from 'react';
 import "./UserInfo.css"
-import profilePicture from "../../image-asset.jpg"
-function userInfo() {/* 
-    const invoice = document.getElementById('pdf-invoice'); */
+import profilePicture from "../../image-asset.png"
+function userInfo() {
     
     return (
         <Fragment>
             <div className="user-container">
                 <div className="user-info">
                     <div>
-                        <img src={profilePicture} width= "130px"/>
+                        <img src={profilePicture}/>
                         <ul>
-                            <li><h3>Rober Galarga</h3></li>
+                            <li>Rober Galarga</li>
                             <li>Cédula: 123451145</li>
                             <li>Teléfono: 3150000000</li>
                             <li>Dirección: Calle falsa 123</li>
@@ -20,10 +19,8 @@ function userInfo() {/*
                     </div>
                     <button className="btn-delete">Eliminar</button>
                 </div>
-                <div className="invoice">{/* 
-                    <input type="file" name="pdf-invoice" id="pdf-invoice"/> */}                    
-                    <embed className="embed" src="../../assets/factura-prueba.pdf" type="application/pdf" width="900" height="400"/>
-
+                <div className="invoice">                
+                    <embed className="embed" src="../../assets/factura-prueba.pdf" type="application/pdf" width="100%" height="100%"/>
                 </div>
             </div>
         </Fragment>

@@ -7,12 +7,11 @@ const asideBar = () => {
             <div className="aside-container">
                 <div className ="subtitle-container">
                     <h4 className="subtitle">Hola</h4>
-                    <h4 className="subtitle-name">Juan Paz</h4>
+                    <p className="subtitle-name">Juan Paz</p>
                 </div>
-                    <button className="search-button">Buscar</button>
+                <button className="search-button">Buscar</button>
             </div>
         </Fragment>
-     );
+    );
 }
- 
 export default asideBar;
