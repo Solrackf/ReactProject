@@ -4,10 +4,14 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import './index.css';
 import App from './App';
 import SimplePay from './layouts/SimplePayment/SimplePay'
+import UserSignUp from './layouts/UserSignUp/UserSignUp'
 import SimpleSignIn from './layouts/simpleSignIn/simpleSignIn'
 import States from './layouts/states/States'
-import UserSignUp from './layouts/UserSignUp/UserSignUp'
 import InternalUserDashboard from './layouts/InternalUserDashboard/InternalUserDashboard'
+import SignIn from './layouts/SignIn/SignIn';
+import Error404 from './layouts/404/404'
+import InvoiceCreation from './layouts/InvoiceCreation/InvoiceCreation'
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,8 +21,11 @@ ReactDOM.render(
         <Route path="/SimplePay" element={<SimplePay/>}/>
         <Route path="/SimpleSignIn" element={<SimpleSignIn/>}/>
         <Route path="/SignUp" element={<UserSignUp/>}/>
+        <Route path="/invoiceCreation" element={<InvoiceCreation/>}/>
         <Route path="/InternalUserDashboard" element={<InternalUserDashboard/>}/>
+        <Route path="/SignIn" element={<SignIn/>} />
         <Route path="/States" element={ <States/> } />
+        <Route path="*" element={ <Error404/> }/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

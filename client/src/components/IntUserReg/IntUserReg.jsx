@@ -1,5 +1,5 @@
 import './IntUserReg.css'
-
+import { Link } from 'react-router-dom'
 export default function IntUserReg(){
     return (
         <div className="container-int-user-reg">
@@ -24,7 +24,8 @@ export default function IntUserReg(){
                         <input className="input-int-user-reg" type="text" placeholder="Ej: johndoe@gmail.com"/>
                     </div>
                 </div>
-                <input type="submit" value="Crear cuenta" className="btn-int-user-reg"/>
+                {/* <input type="submit" value="Crear cuenta" className="btn-int-user-reg"/> */}
+                <Link className="btn-int-user-reg" to="/">Crear Cuenta</Link>
             </form>
         </div>
     )
