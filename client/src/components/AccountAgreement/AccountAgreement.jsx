@@ -9,7 +9,6 @@ export default function AccountAgreement(){
             <p>Teléfono: 3150000000</p>
             <p>Dirección: Cr 46 No.51-67, C.P 05631</p>
             <p>Email:Johndoe@gmail.com</p>
-
         </div>
     )
 }

@@ -1,0 +1,47 @@
+#UserSignUp{
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(10,1fr);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+nav{
+    grid-column: 2/20;
+    grid-row: 1/2;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(0.4rem);
+}
+#Logo, #Logo a{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+#Logo img{
+    height: 2.75rem;
+}
+#TypingLogo{
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+}
+.ButtonGradientTwo{
+    background: var(--dark-gradient);
+    padding: 0.5rem 1rem;
+    border-radius: 2.5rem;
+    -webkit-border-radius: 2.5rem;
+    -moz-border-radius: 2.5rem;
+    -ms-border-radius: 2.5rem;
+    -o-border-radius: 2.5rem;
+}
+#SignUpImg{
+    grid-row: 3/10;
+    grid-column: 3/10;
+    width: 100%;
+}
+.container-int-user-reg{
+    grid-row: 3/9;
+    grid-column: 12/20;
+}

@@ -1,39 +1,44 @@
-.aside-container{ 
-    position: relative;
-    width: 15vw;
-    height: 100%;
-    background-color: #020938;
-    opacity: .7;
+.aside-container{
+    grid-row: 2/10;
+    grid-column: 2/5;
+    background: rgba(2, 9, 56, 0.7);
+    backdrop-filter: blur(1rem);
     border-radius: 2rem;
-    overflow: hidden;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 1.5rem;
+    gap: 2rem;
 }
 .subtitle-container{
-    padding-top: 3.5rem;
-    padding-bottom: 2rem;
     text-align: center;
-    color: white;
+    color: var(--White-Background);
 }
-
 .subtitle{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1em;
-    font-weight: 600;
+    font-weight: 700;
+    color: var(--White-Background);
 }
-.subtitle-name{ 
-    font-family: 'Poppins', sans-serif;
+.subtitle-name{
     font-weight: 300;
+    color: var(--White-Background);
 }
 .search-button{
-    display: block;
-    font-family: 'Poppins', sans-serif;
-    background-color: rgba(113,242,249, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
     color: white;
     border: none;
-    height: 7%;
+    outline: none;
+    height: 2rem;
     width: 70%;
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: .5rem;
-    cursor: pointer;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
 }
