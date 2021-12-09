@@ -30,7 +30,6 @@ const InvCreation = () => {
                 </div>
             </div>
         </Fragment>
-     );
+    );
 }
- 
 export default InvCreation;

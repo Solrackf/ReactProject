@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react'
-import UserLogData from './UserLogData.css'
-const userLogData = () => {
+import './UserLogData.css'
+const UserLogData = () => {
     return ( 
         <Fragment>
             <div className="states-container">
@@ -34,7 +34,7 @@ const userLogData = () => {
                 </div>
             </div>
         </Fragment>
-     );
+    );
 }
- 
-export default userLogData;
+
+export default UserLogData;
