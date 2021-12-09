@@ -12,8 +12,8 @@ export default function UsersManagement(props){
                     <span className="subtitle-user-management">ID: 1234567890</span>
                 </div>
                 <div className="icons-user-management">
-                    <button className="btn-user-management"><img className="icon-user-management" src={Edit} alt="" id="Delete"/></button>
-                    <button className="btn-user-management"><img className="icon-user-management" src={Visible} alt="" id="Delete"/></button>
+                    <button className="btn-user-management"><img className="icon-user-management" src={Edit} alt="" id="Edit"/></button>
+                    <button className="btn-user-management"><img className="icon-user-management" src={Visible} alt="" id="Visible"/></button>
                     <button className="btn-user-management"><img className="icon-user-management" src={Delete} alt="" id="Delete"/></button>
                 </div>
             </div>
