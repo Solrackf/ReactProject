@@ -6,7 +6,7 @@ export default function PaymentLink(){
         <div className="container-PaymentLink">
             <p className="title">Pago De Factura</p>
             <input className="reference" type="text" placeholder="Ingrese Referencia de Pago"/>
-            <Link to="/SimplePay" className="search__payment">Consultar Factura</Link>
+            <Link to="/MinState" className="search__payment">Consultar Factura</Link>
             <div>
                 <p className="text">¿Tienes Una Cuenta?</p>
                 <Link to="/" className="login">Ingresar</Link>
