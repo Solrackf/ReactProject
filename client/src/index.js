@@ -9,6 +9,7 @@ import SimpleSignIn from './layouts/simpleSignIn/simpleSignIn'
 import States from './layouts/states/States'
 import InternalUserDashboard from './layouts/InternalUserDashboard/InternalUserDashboard'
 import SignIn from './layouts/SignIn/SignIn';
+import MinState from './layouts/MinState/MinState'
 import Error404 from './layouts/404/404'
 import InvoiceCreation from './layouts/InvoiceCreation/InvoiceCreation'
 
@@ -21,10 +22,11 @@ ReactDOM.render(
         <Route path="/SimplePay" element={<SimplePay/>}/>
         <Route path="/SimpleSignIn" element={<SimpleSignIn/>}/>
         <Route path="/SignUp" element={<UserSignUp/>}/>
+        <Route path="/SignIn" element={<SignIn/>}/>
         <Route path="/invoiceCreation" element={<InvoiceCreation/>}/>
         <Route path="/InternalUserDashboard" element={<InternalUserDashboard/>}/>
-        <Route path="/SignIn" element={<SignIn/>} />
         <Route path="/States" element={ <States/> } />
+        <Route path="/MinState" element={<MinState/>} />
         <Route path="*" element={ <Error404/> }/>
       </Routes>
     </BrowserRouter>
