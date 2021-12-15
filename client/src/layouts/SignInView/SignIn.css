@@ -1,0 +1,17 @@
+#SignIn{
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(10,1fr);
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+#SignIn .containerSignIn{
+    grid-column: 12/20;
+    grid-row: 3/9;
+}
+#SignIngImg{
+    grid-row: 3/10;
+    grid-column: 2/10;
+    width: 100%;
+}

@@ -18,7 +18,7 @@ const UserSignUp = () => {
                     </Link>
                 </section>
                 <section id="RedirectOptions">
-                    <Link to="/" className="ButtonGradientTwo">Ingresar
+                    <Link to="/SignIn" className="ButtonGradientTwo">Ingresar
                     </Link>
                 </section>
             </nav>

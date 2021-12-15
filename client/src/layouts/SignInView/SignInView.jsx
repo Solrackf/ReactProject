@@ -1,13 +1,13 @@
-import './simpleSignIn.css'
-import PaymentLink from "../../components/PaymentLink/PaymentLink"
-import PayImg from '../../Assets/Pay.svg'
+import './SignIn.css'
 import WaveOne from "../../components/WaveOne/WaveOne"
 import WaveTwo from "../../components/WaveTwo/WaveTwo"
+import SignIn from '../../components/SignIn/SignIn'
+import SignIngImg from '../../Assets/SignIn.svg'
 import { Link } from 'react-router-dom'
 
-const simpleSignIn = () => {
+const SignInView = () => {
     return (
-        <div className="SimpleSignIn">
+        <div id="SignIn">
             <nav>
                 <section id="Logo">
                     <Link to="/">
@@ -16,16 +16,16 @@ const simpleSignIn = () => {
                     </Link>
                 </section>
                 <section id="RedirectOptions">
-                    <Link to="/MinState" className="ButtonGradientTwo">Ingresar
+                    <Link to="/SignUp">Registrarse
                     </Link>
                 </section>
             </nav>
-            <WaveOne></WaveOne>
-            <WaveTwo></WaveTwo>
-            <img src={PayImg} alt="" id="PayImg"/>
-            <PaymentLink></PaymentLink>
+            <WaveOne/>
+            <WaveTwo/>
+            <SignIn/>
+            <img src={SignIngImg} alt="" id="SignIngImg"/>
         </div>
     )
 }
 
-export default simpleSignIn
+export default SignInView

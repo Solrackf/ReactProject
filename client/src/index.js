@@ -8,7 +8,7 @@ import UserSignUp from './layouts/UserSignUp/UserSignUp'
 import SimpleSignIn from './layouts/simpleSignIn/simpleSignIn'
 import States from './layouts/states/States'
 import InternalUserDashboard from './layouts/InternalUserDashboard/InternalUserDashboard'
-import SignIn from './layouts/SignIn/SignIn';
+import SignInView from './layouts/SignInView/SignInView';
 import MinState from './layouts/MinState/MinState'
 import Error404 from './layouts/404/404'
 import InvoiceCreation from './layouts/InvoiceCreation/InvoiceCreation'
@@ -22,7 +22,7 @@ ReactDOM.render(
         <Route path="/SimplePay" element={<SimplePay/>}/>
         <Route path="/SimpleSignIn" element={<SimpleSignIn/>}/>
         <Route path="/SignUp" element={<UserSignUp/>}/>
-        <Route path="/SignIn" element={<SignIn/>}/>
+        <Route path="/SignIn" element={<SignInView/>}/>
         <Route path="/invoiceCreation" element={<InvoiceCreation/>}/>
         <Route path="/InternalUserDashboard" element={<InternalUserDashboard/>}/>
         <Route path="/States" element={ <States/> } />
