@@ -1,8 +1,7 @@
 import './home.css'
 import WaveOne from '../../components/WaveOne/WaveOne'
 import WaveTwo from '../../components/WaveTwo/WaveTwo'
-import { Link } from 'react-router-dom'
-
+// import { Link } from 'react-router-dom'
 
 export default function Home(props){
     return (
@@ -11,16 +10,16 @@ export default function Home(props){
             <WaveTwo></WaveTwo>
             <nav>
                 <section id="Logo">
-                    <Link to="/">
+                    <a href="/">
                         <img src="../Assets/Icon.ico" alt="" />
                         <p id="TypingLogo">Aguas Cartagena</p>
-                    </Link>
+                    </a>
                 </section>
                 <section id="RedirectOptions">
-                    <Link to="/SignUp">Registrarse
-                    </Link>
-                    <Link to="/SignIn" className="ButtonGradientTwo">Ingresar
-                    </Link>
+                    <a href="/SignUp">Registrarse
+                    </a>
+                    <a href="/SignIn" className="ButtonGradientTwo">Ingresar
+                    </a>
                 </section>
             </nav>
             <section id="principalTitles">
@@ -28,12 +27,12 @@ export default function Home(props){
                     <span className="LittleTitle"><br/>Del Caribe</span>
                 </h1>
                 <div className="TitlesButtons">
-                    <Link to="/simpleSignIn" className="ButtonGradient">
+                    <a href="/simpleSignIn" className="ButtonGradient">
                         Pagar Facturas
-                    </Link>
-                    <Link to="/ReqRev">
+                    </a>
+                    <a href="/ReqRev">
                     Solicitar revisión
-                    </Link>
+                    </a>
                 </div>
             </section>
         </div>
