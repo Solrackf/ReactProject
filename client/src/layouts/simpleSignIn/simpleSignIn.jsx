@@ -3,21 +3,21 @@ import PaymentLink from "../../components/PaymentLink/PaymentLink"
 import PayImg from '../../Assets/Pay.svg'
 import WaveOne from "../../components/WaveOne/WaveOne"
 import WaveTwo from "../../components/WaveTwo/WaveTwo"
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 const simpleSignIn = () => {
     return (
         <div className="SimpleSignIn">
             <nav>
                 <section id="Logo">
-                    <Link to="/">
+                    <a href="/">
                         <img src="../Assets/Icon.ico" alt="" />
                         <p id="TypingLogo">Aguas Cartagena</p>
-                    </Link>
+                    </a>
                 </section>
                 <section id="RedirectOptions">
-                    <Link to="/MinState" className="ButtonGradientTwo">Ingresar
-                    </Link>
+                    <a href="/MinState" className="ButtonGradientTwo">Ingresar
+                    </a>
                 </section>
             </nav>
             <WaveOne></WaveOne>
