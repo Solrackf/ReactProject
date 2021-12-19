@@ -9,16 +9,11 @@ export default function EditUsersManagement({ currentId, setCurrentId }){
     const [ userData, setUserData ] = useState({
         name: '', identification: '', phone:'', email:'', password:'', rol: ''
     });
-    const user = useSelector((state) => currentId ? state.users.find((u) => u._id === currentId) : null);
+    const user = useSelector((state) => currentId ? state.users.find((identification) => identification._id === currentId) : null);
 
     useEffect(() => {
         if(user) setUserData(user);
     }, [user])
-
-    const clear = () => {
-        setCurrentId(0);
-        setUserData({ name: '', identification: '', phone: '', email: '', password: '' });
-    };
     
     const dispatch = useDispatch();
 
@@ -54,7 +49,7 @@ export default function EditUsersManagement({ currentId, setCurrentId }){
                         <input className="input-edit-users-management" type="text" name='password' value={userData.password} onChange={(e) => setUserData({ ...userData, password: e.target.value })}/>
                     </div>
                 </div>
-                <input type="submit" value="Guardar cambios" className="btn-edit-users-management" onClick={clear}/>
+                <input type="submit" value="Guardar cambios" className="btn-edit-users-management"/>
             </form>
         </div>
     )
