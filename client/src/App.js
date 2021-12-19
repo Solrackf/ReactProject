@@ -11,12 +11,12 @@ import EditUsersManagement from './components/EditUsersManagement/EditUsersManag
 import './index.css'
 
 const App = () => {
-    const [currentId, setCurrentId] = useState(null);
+    const [currentId, setCurrentId] = useState(0);
     const dispatch = useDispatch();
 
     useEffect(() => {
         dispatch(getUsers());
-    }, [dispatch]);
+    }, [currentId, dispatch]);
 
     return (
       <div>

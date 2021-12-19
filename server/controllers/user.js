@@ -40,7 +40,7 @@ export const updateUser = async (req, res)=>{
     
     const updatedUser = { name, identification, phone, email, password, _id: id }
 
-    await User.findByIdAndUpdate(_id, updatedUser, { new:true} );
+    await User.findByIdAndUpdate(id, updatedUser, { new:true} );
 
     res.json(updatedUser)
 }
