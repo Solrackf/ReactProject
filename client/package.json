@@ -45,5 +45,7 @@
   "description": "Este proyecto busca ser la solución de pagos y consulta de facturas de Aguas Cartagena",
   "main": "index.js",
   "author": "Carlos Escorcia, Sara Díaz, Andrea Mendoza, Anderson Rueda, Juan Fernandez",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {},
+  "keywords": []
 }

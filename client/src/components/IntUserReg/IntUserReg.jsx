@@ -9,6 +9,10 @@ export default function IntUserReg(){
         name: '', identification: '', phone:'', email:'', password:'', rol: '',
     });
 
+    const clear = () => {
+        setUserData({ name: '', identification: '', phone: '', Email: '', password: '' });
+    };
+
     const dispatch = useDispatch();
 
     const handleSubmit = (e) => {
@@ -49,7 +53,7 @@ export default function IntUserReg(){
                         <input type="hidden" name='rol' value='Usuario' onChange={(e) => setUserData({ ...userData, rol: e.target.value})} />
                     </div>
                 </div>
-                <button type="submit" className="btn-int-user-reg">Crear cuenta</button>
+                <button type="submit" className="btn-int-user-reg" onClick={clear}>Crear cuenta</button>
                 {/* <Link className="btn-int-user-reg" to="/">Crear Cuenta</Link> */}
             </form>
         </div>

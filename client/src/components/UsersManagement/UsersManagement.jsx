@@ -4,12 +4,13 @@ import './UsersManagement.css'
 import Edit from "../../edit.png"
 // import Visible from "../../visible.png"
 import Delete from "../../delete.png"
-import { updatedUser } from '../../actions/users';
 import { useDispatch } from 'react-redux';
 
 
-export default function UsersManagement({ user }){
+export default function UsersManagement({ setCurrentId }){
     const users = useSelector((state) => state.users);
+    const dispatch = useDispatch();
+    
     return (
         <div className="user-management">
             {users.map((user) => (
@@ -21,7 +22,7 @@ export default function UsersManagement({ user }){
                     <span className="subtitle-user-management">Email: {user.email}</span>
                 </div>
                 <div className="icons-user-management">
-                    <button className="btn-user-management"><img className="icon-user-management" src={Edit} alt="" id="Edit"/></button>
+                    <button className="btn-user-management" onClick={() => {setCurrentId(user._id)}}><img className="icon-user-management" src={Edit} alt="" id="Edit"/></button>
                     {/* <button className="btn-user-management"><img className="icon-user-management" src={Visible} alt="" id="Visible"/></button> */}
                     <button className="btn-user-management"><img className="icon-user-management" src={Delete} alt="" id="Delete"/></button>
                 </div>
