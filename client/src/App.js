@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { getUsers } from './actions/users';
@@ -6,21 +6,25 @@ import { getUsers } from './actions/users';
 import Home from './layouts/home/Home';
 import SignUp from './layouts/UserSignUp/UserSignUp';
 import UsersManagement from './components/UsersManagement/UsersManagement';
+import EditUsersManagement from './components/EditUsersManagement/EditUsersManagement';
+
 import './index.css'
 
 const App = () => {
-  const dispatch = useDispatch();
+    const [currentId, setCurrentId] = useState(null);
+    const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(getUsers());
-  }, [dispatch]);
+    useEffect(() => {
+        dispatch(getUsers());
+    }, [dispatch]);
 
-  return (
-    <div>
-      <Home/>
-      <UsersManagement/>
-      <SignUp/>
-    </div>
-  );
+    return (
+      <div>
+        <Home/>
+        <UsersManagement setCurrentId={setCurrentId}/>
+        <SignUp/>
+        <EditUsersManagement currentId={currentId} setCurrentId={setCurrentId}/>
+      </div>
+    );
 }
 export default App;

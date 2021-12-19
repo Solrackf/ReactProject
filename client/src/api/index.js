@@ -8,3 +8,4 @@ const url = 'http://localhost:5000/post';
 // })
 export const fetchUsers = () => axios.get(url);
 export const createUser = (newUser) => axios.post(url, newUser);
+export const updateUser = (id, updatedUser) => axios.patch(`${url}/${id}`, updatedUser);
