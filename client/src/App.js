@@ -21,8 +21,8 @@ const App = () => {
     return (
       <div>
         <Home/>
-        <UsersManagement setCurrentId={setCurrentId}/>
         <SignUp/>
+        <UsersManagement setCurrentId={setCurrentId}/>
         <EditUsersManagement currentId={currentId} setCurrentId={setCurrentId}/>
       </div>
     );
