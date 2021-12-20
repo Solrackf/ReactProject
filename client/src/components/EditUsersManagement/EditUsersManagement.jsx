@@ -14,6 +14,11 @@ export default function EditUsersManagement({ currentId, setCurrentId }){
     useEffect(() => {
         if(user) setUserData(user);
     }, [user])
+
+    const clear = () => {
+        setCurrentId(0);
+        setUserData({ name: '', identification: '', phone: '', email: '', password: '' });
+    };
     
     const dispatch = useDispatch();
 
@@ -21,6 +26,7 @@ export default function EditUsersManagement({ currentId, setCurrentId }){
         e.preventDefault();
 
         dispatch(updateUser(currentId, userData));
+        clear();
     }
 
     return (

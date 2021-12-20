@@ -5,6 +5,7 @@ import Edit from "../../edit.png"
 // import Visible from "../../visible.png"
 import Delete from "../../delete.png"
 import { useDispatch } from 'react-redux';
+import { deleteUser } from '../../actions/users';
 
 
 export default function UsersManagement({ setCurrentId }){
@@ -24,7 +25,7 @@ export default function UsersManagement({ setCurrentId }){
                 <div className="icons-user-management">
                     <button className="btn-user-management" onClick={() => {setCurrentId(user._id)}}><img className="icon-user-management" src={Edit} alt="" id="Edit"/></button>
                     {/* <button className="btn-user-management"><img className="icon-user-management" src={Visible} alt="" id="Visible"/></button> */}
-                    <button className="btn-user-management"><img className="icon-user-management" src={Delete} alt="" id="Delete"/></button>
+                    <button className="btn-user-management" onClick={() => dispatch(deleteUser(user._id))}><img className="icon-user-management" src={Delete} alt="" id="Delete"/></button>
                 </div>
             </div>
             ))}
