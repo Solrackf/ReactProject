@@ -1,4 +1,4 @@
-import { FETCH_ALL, CREATE, UPDATE } from '../constants/actionTypes';
+import { FETCH_ALL, CREATE, UPDATE, DELETE } from '../constants/actionTypes';
 import * as api from '../api/index';
 
 export const getUsers = () => async (dispatch) => {
@@ -26,6 +26,16 @@ export const updateUser = (id, user) => async (dispatch) => {
         const { data } = await api.updateUser(id, user);
 
         dispatch({ type: UPDATE, payload: data})
+    } catch (error) {
+        console.log(error.message)
+    }
+}
+
+export const deleteUser = (id) => async (dispatch) => {
+    try {
+        await api.deleteUser(id);
+
+        dispatch({ type: DELETE, payload: id })
     } catch (error) {
         console.log(error.message)
     }
