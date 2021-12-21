@@ -1,37 +1,33 @@
-import React, {Fragment} from 'react'
+import React, { Fragment } from 'react'
+import { useSelector } from 'react-redux';
+
+import Edit from "../../edit.png"
+import Delete from "../../delete.png"
+
+import { useDispatch } from 'react-redux';
+
 import './UserLogData.css'
-const UserLogData = () => {
+
+const UserLogData = ({ setCurrentId }) => {
+    const estates = useSelector((state) => state.estates);
+    const dispatch = useDispatch();
+
     return ( 
         <Fragment>
             <div className="states-container">
-                <div className="state">
-                    <h4>Predio 1</h4>
-                    <p>Dirección</p>
-                    <p>Calle falsa #123</p>
+                {estates.map((estate) =>(
+                <div className="estate">
+                    <h4>Predio</h4>
+                    <p>{estate.EstateDirection}</p>
+                    <p>{estate.Neighborhood}</p>
+                    <p>{estate.Stratum}</p>
                     <h4>Estado</h4>
                     <p>Pagado</p>
+                    <div className="iconsEstates">
+                        <button className="btnEstates" onClick={() => {setCurrentId(estate._id)}}><img className="iconEstates" src={Edit} alt="" id="Edit"/></button>
+                    </div>
                 </div>
-                <div className="state">
-                    <h4>Predio 2</h4>
-                    <p>Dirección</p>
-                    <p>Calle falsa #123</p>
-                    <h4>Estado</h4>
-                    <p>Pagado</p>
-                </div>
-                <div className="state">
-                    <h4>Predio 3</h4>
-                    <p>Dirección</p>
-                    <p>Calle falsa #123</p>
-                    <h4>Estado</h4>
-                    <p>Mochado por impago</p>
-                </div>
-                <div className="state">
-                    <h4>Predio 4</h4>
-                    <p>Dirección</p>
-                    <p>Calle falsa #123</p>
-                    <h4>Estado</h4>
-                    <p>Vencido</p>
-                </div>
+                ))}
             </div>
         </Fragment>
     );

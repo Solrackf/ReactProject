@@ -1,14 +1,20 @@
-import React, { useState } from 'react';
-import './PredioRegister.css';
-import { useDispatch } from 'react-redux';
-import { createEstate } from '../../actions/estates';
+import React, { useState, useEffect } from 'react';
+import './EditEstate.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { createEstate, updateEstate } from '../../actions/estates';
 
-export default function PredioRegister(){
+export default function PredioRegister({ currentId, setCurrentId }){
     const [ estateData, setEstateData ] = useState({
         Owner: '', EstateDirection: '', Neighborhood:'', Stratum:''
     });
+    const estate = useSelector((state) => currentId ? state.estates.find((EstateDirection) => EstateDirection._id === currentId) : null);
+
+    useEffect(() => {
+        if(estate) setEstateData(estate);
+    }, [estate])
 
     const clear = () => {
+        setCurrentId(0);
         setEstateData({ Owner: '', EstateDirection: '', Neighborhood:'', Stratum:'' });
     };
 
@@ -17,15 +23,14 @@ export default function PredioRegister(){
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        dispatch(createEstate(estateData));
+        dispatch(updateEstate(currentId, estateData));
         clear()
     }
 
     return (
         <div className="containerEstatesReg">
-            <span className="titleEstatesReg">Registro de Predio</span>
-            <span className="subtitleEstatesReg">Ingresa los datos</span>
-            <form action="" onSubmit={handleSubmit} method="post" className="containerFormEstatesReg">
+            <span className="titleEstatesReg">Edicion de Predio</span>
+            <form onSubmit={handleSubmit} className="containerFormEstatesReg">
                 <div className="containerForm2EstatesReg">
                     <div>
                         <label className="labelEstatesReg">Nro de identificación del propietario</label>
@@ -52,7 +57,7 @@ export default function PredioRegister(){
                         </select>
                     </div>
                 </div>
-                <input type="submit" value="Registrar predio" className="btnRegistroEstatesReg"/>
+                <input type="submit" value="Guardar cambios" className="btnRegistroEstatesReg"/>
             </form>
         </div>
     )

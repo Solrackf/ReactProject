@@ -14,13 +14,13 @@ import SignInView from './layouts/SignInView/SignInView';
 import MinState from './layouts/MinState/MinState';
 import Error404 from './layouts/404/404';
 import InvoiceCreation from './layouts/InvoiceCreation/InvoiceCreation';
+import PredioRegister from './components/PredioRegister/PredioRegister';
 
 import './index.css'
 import { BrowserRouter, Route, Routes, Redirect } from 'react-router-dom';
 
 const App = () => {
-
-        const [currentId, setCurrentId] = useState(0);
+    const [currentId, setCurrentId] = useState(0);
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -32,7 +32,6 @@ const App = () => {
           <Route path="/" element={<Home/>}/>
           <Route path="/SignUp" element={<SignUp/>}/>
           <Route path="/Users" element={<UserEdit/>}/>
-          <Route path="/" element={<App/>}/>        
           <Route path="/SimplePay" element={<SimplePay/>}/>
           <Route path="/SimpleSignIn" element={<SimpleSignIn/>}/>
           <Route path="/SignIn" element={<SignInView/>}/>
@@ -41,6 +40,7 @@ const App = () => {
           <Route path="/States" element={ <States/> } />
           <Route path="/MinState" element={<MinState/>} />
           <Route path="*" element={ <Error404/> }/>
+          <Route path="/newEstate" element={ <PredioRegister/> }/>
         </Routes>
       </BrowserRouter>
     );
