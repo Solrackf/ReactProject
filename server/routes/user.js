@@ -3,6 +3,7 @@ import { getUsers, createUser, updateUser, deleteUser } from "../controllers/use
 
 const router = Express.Router();
 
+// CRUD Usuarios
 router.get('/', getUsers);
 router.post('/', createUser);
 router.patch('/:id', updateUser);

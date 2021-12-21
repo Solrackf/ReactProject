@@ -6,11 +6,11 @@ import { createUser } from '../../actions/users'
 // import { Link } from 'react-router-dom'
 export default function IntUserReg(){
     const [ userData, setUserData ] = useState({
-        name: '', identification: '', phone:'', email:'', password:'', rol: '',
+        name: '', identification: '', phone:'', email:'', password:'', rol: 'Usuario',
     });
 
     const clear = () => {
-        setUserData({ name: '', identification: '', phone: '', Email: '', password: '' });
+        setUserData({ name: '', identification: '', phone: '', email: '', password: '', rol: '' });
     };
 
     const dispatch = useDispatch();
@@ -46,12 +46,7 @@ export default function IntUserReg(){
                     </div>
                     <div>
                         <label className="label-int-user-reg">Contraseña</label>
-                        <input className="input-int-user-reg" type="password"/>
-                    </div>
-                    <div>
-                        <label className="label-int-user-reg">Confirmar contraseña</label>
                         <input className="input-int-user-reg" type="password" name='password' value={userData.password} onChange={(e) => setUserData({ ...userData, password: e.target.value})}/>
-                        <input type="hidden" name='rol' value='Usuario' onChange={(e) => setUserData({ ...userData, rol: e.target.value})} />
                     </div>
                 </div>
                 <button type="submit" className="btn-int-user-reg">Crear cuenta</button>

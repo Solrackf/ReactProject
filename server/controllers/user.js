@@ -1,5 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import bcrypt from "bcryptjs";
 
 import User from '../models/User.js';
 
@@ -19,11 +20,18 @@ export const getUsers = async (req,res)=>{
 };
 
 export const createUser = async (req,res)=>{
-    const newUser = new User({ name:req.body.name, identification:req.body.identification, phone:req.body.phone, email:req.body.email, password:req.body.password, rol:'Usuario' })
-    try {
-        await newUser.save();
+    const { name, identification, phone, email, password, rol } = req.body;
 
-        res.status(201).json(newUser);
+    try {
+        const oldUser = await User.findOne({ identification });
+
+        if (oldUser) return res.status(400).json({ message: "Este usuraio ya existe"});
+
+        const hashPassword = await bcrypt.hash(password, 12);
+
+        const newUser = User.create({ name, identification, phone, email, password:hashPassword, rol });
+
+        res.status(201).json({ newUser });
     } catch (error) {
         res.status(409).json({ message: error.message });
         console.log(error)
