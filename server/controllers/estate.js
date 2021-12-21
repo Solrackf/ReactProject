@@ -46,15 +46,15 @@ export const updateEstate = async (req, res)=>{
     res.json(updatedEstate)
 }
 
-// export const deleteEstate = async (req, res)=>{
-//     const { id } = req.params;
+export const deleteEstate = async (req, res)=>{
+    const { id } = req.params;
 
-//     if (!mongoose.Types.ObjectId.isValid(id))
-//         return res.status(404).send('Este usuario no existe');
+    if (!mongoose.Types.ObjectId.isValid(id))
+        return res.status(404).send('Este usuario no existe');
     
-//     await User.findByIdAndRemove(id);
+    await Estates.findByIdAndRemove(id);
 
-//     res.json({ message: 'Usuario eliminado exitosamente' })
-// }
+    res.json({ message: 'Usuario eliminado exitosamente' })
+}
 
 export default router;

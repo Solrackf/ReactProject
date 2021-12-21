@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './EditEstate.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { createEstate, updateEstate } from '../../actions/estates';
+import { updateEstate } from '../../actions/estates';
 
 export default function PredioRegister({ currentId, setCurrentId }){
     const [ estateData, setEstateData ] = useState({

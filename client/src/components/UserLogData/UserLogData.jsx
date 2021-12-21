@@ -5,6 +5,7 @@ import Edit from "../../edit.png"
 import Delete from "../../delete.png"
 
 import { useDispatch } from 'react-redux';
+import { deleteEstate } from '../../actions/estates';
 
 import './UserLogData.css'
 
@@ -25,6 +26,7 @@ const UserLogData = ({ setCurrentId }) => {
                     <p>Pagado</p>
                     <div className="iconsEstates">
                         <button className="btnEstates" onClick={() => {setCurrentId(estate._id)}}><img className="iconEstates" src={Edit} alt="" id="Edit"/></button>
+                        <button className="btnEstates" onClick={() => dispatch(deleteEstate(estate._id))}><img className="iconEstates" src={Delete} alt="" id="Delete"/></button>
                     </div>
                 </div>
                 ))}

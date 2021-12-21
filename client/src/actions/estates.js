@@ -31,12 +31,12 @@ export const updateEstate = (id, estate) => async (dispatch) => {
     }
 }
 
-// export const deleteEstate = (id) => async (dispatch) => {
-//     try {
-//         await api.deleteEstate(id);
+export const deleteEstate = (id) => async (dispatch) => {
+    try {
+        await api.deleteEstate(id);
 
-//         dispatch({ type: DELETE, payload: id })
-//     } catch (error) {
-//         console.log(error.message)
-//     }
-// }
+        dispatch({ type: DELETE, payload: id })
+    } catch (error) {
+        console.log(error.message)
+    }
+}

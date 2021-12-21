@@ -1,5 +1,5 @@
 import Express from "express";
-import { getEstate, createEstate, updateEstate } from "../controllers/estate.js";
+import { getEstate, createEstate, updateEstate, deleteEstate } from "../controllers/estate.js";
 
 const router = Express.Router();
 
@@ -7,6 +7,6 @@ const router = Express.Router();
 router.get('/Estates', getEstate);
 router.post('/newEstate', createEstate);
 router.patch('/:id', updateEstate);
-// router.delete('/:id', deletePredio);
+router.delete('/:id', deleteEstate);
 
 export default router;

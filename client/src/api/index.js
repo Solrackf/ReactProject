@@ -10,3 +10,4 @@ export const deleteUser = (id) => axios.delete(`${url}/post/${id}`);
 export const fetchEstates = () => axios.get(`${url}/estate/Estates`);
 export const createEstate = (newEstate) => axios.post(`${url}/estate/newEstate`, newEstate);
 export const updateEstate = (id, updateEstate) => axios.patch(`${url}/estate/${id}`, updateEstate);
+export const deleteEstate = (id) => axios.delete(`${url}/estate/${id}`);
