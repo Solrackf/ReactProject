@@ -6,6 +6,25 @@ import User from '../models/User.js';
 
 const router = express.Router();
 
+export const signIn = async (req, res) => {
+    const { identification, password } = req.body;
+  
+    try {
+      const oldUser = await UserModal.findOne({ identification });
+  
+      if (!oldUser) return res.status(404).json({ message: "Este usuario no existe" });
+  
+      const isPasswordCorrect = await bcrypt.compare(password, oldUser.password);
+  
+      if (!isPasswordCorrect) return res.status(400).json({ message: "Datos no validos" });
+    
+      res.status(200).json({ result: oldUser });
+    } catch (err) {
+      res.status(500).json({ message: "Something went wrong" });
+    }
+  };
+  
+
 export const getUsers = async (req,res)=>{
     try {
         const user = await User.find();

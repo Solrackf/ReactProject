@@ -3,6 +3,9 @@ import { getUsers, createUser, updateUser, deleteUser } from "../controllers/use
 
 const router = Express.Router();
 
+// Login 
+router.post('/SignIn', signIn)
+
 // CRUD Usuarios
 router.get('/', getUsers);
 router.post('/', createUser);
