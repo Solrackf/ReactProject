@@ -3,7 +3,7 @@ import axios from 'axios';
 const url = 'http://localhost:5000';
 
 export const fetchUsers = () => axios.get(`${url}/post`);
-export const createUser = (newUser) => axios.post(url, newUser);
+export const createUser = (newUser) => axios.post(`${url}/post`, newUser);
 export const updateUser = (id, updatedUser) => axios.patch(`${url}/post/${id}`, updatedUser);
 export const deleteUser = (id) => axios.delete(`${url}/post/${id}`);
 
